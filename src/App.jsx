@@ -1,10 +1,11 @@
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 export default function App() {
   return (
     <>
       <Header />
-      <h2 className="text-7xl text-red-600">Tailwind has been setup</h2>
+      <Hero />
     </>
   )
 }
