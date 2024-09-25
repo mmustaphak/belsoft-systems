@@ -7,37 +7,37 @@ import vanity from "../assets/vanity.png"
 
 const projects = [
     {
-      "title": "Project Name",
-      "description": "Description (i.e Nike Photoshoot)",
-      "img": nike
+        "title": "Project Name",
+        "description": "Description (i.e Nike Photoshoot)",
+        "img": nike
     },
     {
-      "title": "Project Name",
-      "description": "Description (i.e App UI Design)",
-      "img": ui
+        "title": "Project Name",
+        "description": "Description (i.e App UI Design)",
+        "img": ui
     },
     {
-      "title": "Project Name",
-      "description": "Description",
-      "img": fivar
+        "title": "Project Name",
+        "description": "Description",
+        "img": fivar
     },
     {
-      "title": "Project Name",
-      "description": "Description",
-      "img": junk
+        "title": "Project Name",
+        "description": "Description",
+        "img": junk
     },
     {
-      "title": "Project Name",
-      "description": "Description",
-      "img": lay
+        "title": "Project Name",
+        "description": "Description",
+        "img": lay
     },
     {
-      "title": "Project Name",
-      "description": "Description",
-      "img": vanity
+        "title": "Project Name",
+        "description": "Description",
+        "img": vanity
     }
-  ]
-  
+]
+
 
 
 export default function MyWork() {
@@ -58,11 +58,15 @@ export default function MyWork() {
         )
     }
 
+    const renderedProjects = projects.map(project => <ProjectCard {...project} />)
+
 
     return (
         <section className="mt-[42px]">
             <h2 className="text-project-green font-semibold text-[2.5rem]">My Work</h2>
-            <ProjectCard title="Project Name" description="Description (i.e Nike Photoshoot)" img={nike} />
+            <div className="mt-[42px]">
+                {renderedProjects}
+            </div>
         </section>
     )
 }
