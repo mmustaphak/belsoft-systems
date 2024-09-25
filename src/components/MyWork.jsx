@@ -1,4 +1,43 @@
 import nike from "../assets/nike.png"
+import ui from "../assets/ui.png"
+import fivar from "../assets/fivar.png"
+import junk from "../assets/junk.png"
+import lay from "../assets/lay.png"
+import vanity from "../assets/vanity.png"
+
+const projects = [
+    {
+      "title": "Project Name",
+      "description": "Description (i.e Nike Photoshoot)",
+      "img": nike
+    },
+    {
+      "title": "Project Name",
+      "description": "Description (i.e App UI Design)",
+      "img": ui
+    },
+    {
+      "title": "Project Name",
+      "description": "Description",
+      "img": fivar
+    },
+    {
+      "title": "Project Name",
+      "description": "Description",
+      "img": junk
+    },
+    {
+      "title": "Project Name",
+      "description": "Description",
+      "img": lay
+    },
+    {
+      "title": "Project Name",
+      "description": "Description",
+      "img": vanity
+    }
+  ]
+  
 
 
 export default function MyWork() {
