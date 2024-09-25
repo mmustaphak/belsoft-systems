@@ -1,4 +1,31 @@
 import cone from "../assets/cone.png"
+import ui from "../assets/ui.png"
+import visualDesign from "../assets/visual-design.png"
+import spring from "../assets/spring.png"
+
+const services = [
+    {
+        "title": "Art Direction",
+        "description": "I lead creative teams to execute cohesive visual concepts, overseeing the entire design process to ensure alignment with brand identity and project goals.",
+        "img": cone
+    },
+    {
+        "title": "UI/UX Design",
+        "description": "I design user-friendly interfaces that are both visually appealing and highly functional, focusing on enhancing the overall user experience through research, wireframing, and prototyping.",
+        "img": ui
+    },
+    {
+        "title": "Visual Design",
+        "description": "I craft compelling visuals that effectively communicate messages, focusing on branding, digital marketing, and web design to create visually striking and impactful designs.",
+        "img": visualDesign
+    },
+    {
+        "title": "Product Design",
+        "description": "I create products that solve real-world problems, blending design and strategy throughout the product lifecycle to meet both user needs and business goals.",
+        "img": spring
+    }
+]
+
 
 export default function Services() {
     function ServicesCard({img, title, description}) {
