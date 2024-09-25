@@ -45,7 +45,7 @@ export default function Services() {
 
     return (
         <section className="mt-[108px]">
-            <h1 className="font-bold text-[2.5rem] text-project-green">My Services</h1>
+            <h1 id="services-section" className="font-bold text-[2.5rem] text-project-green">My Services</h1>
             <div className="grid grid-cols-2 gap-x-6">
                 {renderedServices}
             </div>

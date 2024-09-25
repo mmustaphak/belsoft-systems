@@ -9,16 +9,16 @@ export default function Header() {
                     </a>
                 </div>
                 <ul className="flex">
-                    <a className="mr-[30px] text-xl font-bold" href="">
+                    <a className="mr-[30px] text-xl font-bold" href="#hero-section">
                         <li>Home</li>
                     </a>
-                    <a className="mr-[30px] text-xl text-project-gray" href="">
+                    <a className="mr-[30px] text-xl text-project-gray" href="#services-section">
                         <li>Services</li>
                     </a>
-                    <a className="mr-[30px] text-xl text-project-gray" href="">
+                    <a className="mr-[30px] text-xl text-project-gray" href="portfolio">
                         <li>Portfolio</li>
                     </a>
-                    <a className="text-project-gray text-xl" href="">
+                    <a className="text-project-gray text-xl" href="#contact-section">
                         <li>Contact</li>
                     </a>
                 </ul>

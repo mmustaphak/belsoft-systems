@@ -4,7 +4,7 @@ import behance from "../assets/behance.svg"
 
 export default function Footer() {
     return (
-        <footer className="mt-[129px]">
+        <footer id="contact-section" className="mt-[129px]">
             <h1 className="text-project-green font-semibold text-[2.5rem]">Reach Out</h1>
             <div className="flex justify-between mt-6">
                 <div className="max-w-[598px]">
