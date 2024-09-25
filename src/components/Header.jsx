@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <header className="px-8 py-4 shadow-[0px_0.3px_#75687E] bg-white/10 backdrop-opacity-50">
+        <header className="relative z-20 px-8 py-4 shadow-[0px_0.3px_#75687E] bg-white/10 backdrop-opacity-50">
             <nav className="flex justify-between items-center max-w-[1260px] mx-auto">
                 <div>
                     <a className="flex items-center" href="">
