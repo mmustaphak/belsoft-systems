@@ -1,18 +1,27 @@
+import instagram from "../assets/instagram.svg"
+import dribble from "../assets/dribble.svg"
+import behance from "../assets/behance.svg"
+
 export default function Footer() {
     return (
-        <footer>
-            <h1>Reach Out</h1>
-            <div>
-                <div>
+        <footer className="mt-[129px]">
+            <h1 className="text-project-green font-semibold text-[2.5rem]">Reach Out</h1>
+            <div className="flex justify-between mt-6">
+                <div className="max-w-[598px]">
                     <p>Let&apos;s create something extraordinary together. Whether you have a project in mind or just want to chat, feel free to reach out!</p>
-                    <a href=""><img src="" alt="" /></a><a href=""><img src="" alt="" /></a><a href=""><img src="" alt="" /></a></div>
-                <form action="">
-                    <input type="text" name="name" placeholder="name" />
-                    <input type="text" name="email" placeholder="Email" />
-                    <submit></submit>
-                </form>
+                    <div className="flex justify-between mt-[15px] max-w-[156px]">
+                        <a href=""><img src={instagram} alt="" /></a>
+                        <a href=""><img src={dribble} alt="" /></a>
+                        <a href=""><img src={instagram} alt="" /></a>
+                    </div>
+                    <form className="flex flex-col mt-[10px]" action="">
+                        <input className="px-6 py-4 bg-[#FAFAFA] placeholder:text-[#2D2D2D] " type="text" name="Name" placeholder="Name" />
+                        <input className="mt-3 px-6 py-4 bg-[#FAFAFA] placeholder:text-[#2D2D2D] " type="text" name="email" placeholder="Email" />
+                        <submit className="w-fit mt-[34px] py-[10px] px-[35px] font-medium text-2xl text-white bg-project-green">Submit</submit>
+                    </form>
+                </div>
+                <p className="font-extrabold leading-none text-[8.75rem]">Thank <br/><span className="ml-[137px] text-project-green">You.</span></p>
             </div>
-            <p>Thank <span>You.</span></p>
         </footer>
     )
 }
