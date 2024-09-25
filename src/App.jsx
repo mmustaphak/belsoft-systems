@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MyWork from "./components/MyWork";
@@ -9,7 +10,8 @@ export default function App() {
       <Header />
       <Hero />
       <Services />
-      <MyWork />  
+      <MyWork /> 
+      <Footer /> 
     </>
   )
 }
