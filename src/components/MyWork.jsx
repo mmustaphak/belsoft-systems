@@ -64,7 +64,7 @@ export default function MyWork() {
     return (
         <section className="mt-[42px]">
             <h2 className="text-project-green font-semibold text-[2.5rem]">My Work</h2>
-            <div className="mt-[42px]">
+            <div className="grid grid-cols-3 gap-6 mt-[42px]">
                 {renderedProjects}
             </div>
         </section>
