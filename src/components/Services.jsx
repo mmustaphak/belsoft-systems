@@ -1,5 +1,5 @@
 import cone from "../assets/cone.png"
-import ui from "../assets/ui.png"
+import ui from "../assets/ui-ux.png"
 import visualDesign from "../assets/visual-design.png"
 import spring from "../assets/spring.png"
 
@@ -41,11 +41,13 @@ export default function Services() {
         )
     }
 
+    const renderedServices = services.map(service    => <ServicesCard {...service}/>)
+
     return (
         <section className="mt-[108px]">
             <h1 className="font-bold text-[2.5rem] text-project-green">My Services</h1>
             <div>
-                <ServicesCard img={cone} title="Art Direction" description="I lead creative teams to execute cohesive visual concepts, overseeing the entire design process to ensure alignment with brand identity and project goals."/>
+                {renderedServices}
             </div>
         </section>
     )
